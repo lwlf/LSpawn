@@ -12,6 +12,9 @@ Github 地址：https://github.com/lwlf/LSpawn
 
 版本更新：  
 
+v 0.1.2 - 2021/01/06  
+* 修复 40 版本不能运行的 Bug  
+
 v 0.1.1 - 2021/01/06  
 * 重写 Mod 代码
 * 修改物品获取逻辑，现在可以获取所有物品（不包括具有隐藏及过期属性的物品），预测可以获取到其他 Mod 物品（未经测试）
@@ -39,3 +42,6 @@ v 0.1.1 - 2021/01/06
 * Modify the item acquisition logic, now all items can be acquired (excluding items with hidden and expired attributes), and other Mod items are predicted to be available (untested)
 + Add item search (filter) function
 + Add the function of generating items in batches
+
+v 0.1.2-2021/01/06  
+* Fix the bug that version 40 cannot run  
