@@ -3,7 +3,7 @@ LSpawnMain = LSpawnMain or {}
 function LSpawnMain:init()
     LSpawn = LSpawnItemsWindow:new(100, 100, 680, 400)
     LSpawn:addToUIManager()
-    LSpawn:setVisible(false)
+    -- LSpawn:setVisible(false)
 end
 
 function LSpawnMain.listener(key)
