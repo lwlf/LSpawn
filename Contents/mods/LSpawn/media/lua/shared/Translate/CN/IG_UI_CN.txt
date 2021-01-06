@@ -1,0 +1,4 @@
+IGUI_CN = {
+    IGUI_LSpawn_Tooltip_FilterName = "名称过滤：\n请输入物品的名称",
+    IGUI_LSpawn_Tooltip_SpawnNumber = "生成数量：\n请输入生成数量"
+}

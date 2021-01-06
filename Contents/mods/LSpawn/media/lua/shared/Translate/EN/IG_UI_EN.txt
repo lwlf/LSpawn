@@ -1,0 +1,4 @@
+IGUI_EN = {
+    IGUI_LSpawn_Tooltip_FilterName = "Filter by name: \nPlease input item's name",
+    IGUI_LSpawn_Tooltip_SpawnNumber = "Spawn Number: \nPlease input spawn number"
+}
