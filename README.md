@@ -37,11 +37,11 @@ Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=2320421682
 
 Version update:  
 
+v 0.1.2-2021/01/06  
+* Fix the bug that version 40 cannot run
+
 v 0.1.1 - 2021/01/06  
 * Rewrite Mod code
 * Modify the item acquisition logic, now all items can be acquired (excluding items with hidden and expired attributes), and other Mod items are predicted to be available (untested)
 + Add item search (filter) function
 + Add the function of generating items in batches
-
-v 0.1.2-2021/01/06  
-* Fix the bug that version 40 cannot run  
