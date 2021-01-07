@@ -29,7 +29,7 @@ function LSpawnUtil:getItemsByCategory(category, ignoreHidden, ignoreObsolete)
         local item = items:get(i - 1)
 
         while true do
-            if tonumber(self:getGameVersion()) > 41 then
+            if self:getGameVersion() >= 41 then
                 if ignoreHidden and item:isHidden() then
                     break
                 end
@@ -91,7 +91,7 @@ function LSpawnUtil:getItemsList(inclueAll, ignoreHidden, ignoreObsolete)
         while true do
             list[category] = list[category] or {}
 
-            if tonumber(self:getGameVersion()) > 41 then
+            if self:getGameVersion() >= 41 then
                 if ignoreHidden and item:isHidden() then
                     break
                 end
@@ -149,7 +149,8 @@ function LSpawnUtil:getMod()
 end
 
 function LSpawnUtil:getGameVersion()
-    return getCore():getVersionNumber()
+    local numStr, _ = string.gsub(getCore():getVersionNumber(), "[^0-9.]", "")
+    return tonumber(numStr)
 end
 
 --[[
