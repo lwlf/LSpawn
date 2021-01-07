@@ -10,3 +10,8 @@
 Github 地址：https://github.com/lwlf/LSpawn  
 贴吧地址：https://tieba.baidu.com/p/7182666211  
 创意工坊：https://steamcommunity.com/sharedfiles/filedetails/?id=2320421682  
+
+> 非 Steam创意工坊订阅 使用方法  
+> 下载文件，并将压缩文件解压到【C:\Users\用户名\Zomboid\Workshop\】  
+> 注意修改 用户名  
+> 其他方法请看贴吧  
