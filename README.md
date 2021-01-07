@@ -1,6 +1,6 @@
 # LSpawn
 
-[中文](/REDME.md) | [English](/REDME_EN.md)
+[中文](/README.md) | [English](/README_EN.md)
 
 一款物品生成工具 By 刘大帅气、Ailo  
 建议游戏 40 版本及以上使用，低于 40 版本未经测试，可能导致 Mod 不可用、游戏奔溃等问题。  
