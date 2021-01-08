@@ -149,61 +149,7 @@ function LSpawnUtil:getMod()
 end
 
 function LSpawnUtil:getGameVersion()
-    local numStr, _ = string.gsub(getCore():getVersionNumber(), "[^0-9.]", "")
+    local gameVersion = getCore():getVersionNumber()
+    local numStr = string.match(gameVersion, "[0-9]+%.[0-9]+")
     return tonumber(numStr)
 end
-
---[[
-function LSpawnUtil:test()
-    local totalTime1, totalTime2, totalTime3,totalTime4, totalTime5, totalTime6, totalTime7 = 0,0,0,0,0,0,0
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getCategories()
-        totalTime1 = totalTime1 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 1: " .. tostring(totalTime1) .. " " .. tostring(totalTime1 / 10))
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getItemsByCategory("All")
-        totalTime2 = totalTime2 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 2: " .. tostring(totalTime2) .. " " .. tostring(totalTime2 / 10))
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getItemsByName()
-        totalTime3 = totalTime3 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 3: " .. tostring(totalTime3) .. " " .. tostring(totalTime3 / 10))
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getItemsList()
-        totalTime4 = totalTime4 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 4: " .. tostring(totalTime4) .. " " .. tostring(totalTime4 / 10))
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getAllItems()
-        totalTime5 = totalTime5 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 5: " .. tostring(totalTime5) .. " " .. tostring(totalTime5 / 10))
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getMod()
-        totalTime6 = totalTime6 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 6: " .. tostring(totalTime6) .. " " .. tostring(totalTime6 / 10))
-
-    for i = 1, 10, 1 do
-        local time = os.time()
-        LSpawnUtil:getItemsListByName("car")
-        totalTime7 = totalTime7 + (os.time() - time)
-    end
-    print("[LSpawn] Total Time 7: " .. tostring(totalTime7) .. " " .. tostring(totalTime7 / 10))
-end
-]]
