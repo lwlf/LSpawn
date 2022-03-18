@@ -130,5 +130,5 @@ function LSpawnItemsWindow:onSpawnNumberChange()
 end
 
 function LSpawnItemsWindow:onAddItem(item)
-    self.player:getInventory():AddItems(item:getFullName(), self.parent.parent.spawnNumber)
+    getPlayer():getInventory():AddItems(item:getFullName(), self.parent.parent.spawnNumber)
 end
